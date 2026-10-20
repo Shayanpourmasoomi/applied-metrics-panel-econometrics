@@ -2,20 +2,10 @@
 pip install pandas numpy statsmodels linearmodels
 ```
 
-    Requirement already satisfied: pandas in /usr/local/lib/python3.11/dist-packages (2.2.2)
-    Requirement already satisfied: numpy in /usr/local/lib/python3.11/dist-packages (2.0.2)
-    Requirement already satisfied: statsmodels in /usr/local/lib/python3.11/dist-packages (0.14.4)
     Collecting linearmodels
       Downloading linearmodels-6.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.9 kB)
-    Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.11/dist-packages (from pandas) (2.9.0.post0)
-    Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.11/dist-packages (from pandas) (2025.2)
-    Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.11/dist-packages (from pandas) (2025.2)
-    Requirement already satisfied: scipy!=1.9.2,>=1.8 in /usr/local/lib/python3.11/dist-packages (from statsmodels) (1.15.2)
-    Requirement already satisfied: patsy>=0.5.6 in /usr/local/lib/python3.11/dist-packages (from statsmodels) (1.0.1)
-    Requirement already satisfied: packaging>=21.3 in /usr/local/lib/python3.11/dist-packages (from statsmodels) (24.2)
     Collecting mypy-extensions>=0.4 (from linearmodels)
       Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
-    Requirement already satisfied: Cython>=3.0.10 in /usr/local/lib/python3.11/dist-packages (from linearmodels) (3.0.12)
     Collecting pyhdfe>=0.1 (from linearmodels)
       Downloading pyhdfe-0.2.0-py3-none-any.whl.metadata (4.0 kB)
     Collecting formulaic>=1.0.0 (from linearmodels)
@@ -24,10 +14,6 @@ pip install pandas numpy statsmodels linearmodels
       Downloading setuptools_scm-8.3.1-py3-none-any.whl.metadata (7.0 kB)
     Collecting interface-meta>=1.2.0 (from formulaic>=1.0.0->linearmodels)
       Downloading interface_meta-1.3.0-py3-none-any.whl.metadata (6.7 kB)
-    Requirement already satisfied: typing-extensions>=4.2.0 in /usr/local/lib/python3.11/dist-packages (from formulaic>=1.0.0->linearmodels) (4.13.2)
-    Requirement already satisfied: wrapt>=1.0 in /usr/local/lib/python3.11/dist-packages (from formulaic>=1.0.0->linearmodels) (1.17.2)
-    Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.11/dist-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
-    Requirement already satisfied: setuptools in /usr/local/lib/python3.11/dist-packages (from setuptools-scm<9.0.0,>=8.0.0->setuptools-scm[toml]<9.0.0,>=8.0.0->linearmodels) (75.2.0)
     Downloading linearmodels-6.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.7 MB)
     [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.7/1.7 MB[0m [31m19.4 MB/s[0m eta [36m0:00:00[0m
     [?25hDownloading formulaic-1.1.1-py3-none-any.whl (115 kB)
@@ -39,7 +25,6 @@ pip install pandas numpy statsmodels linearmodels
     [?25hDownloading interface_meta-1.3.0-py3-none-any.whl (14 kB)
     Installing collected packages: setuptools-scm, mypy-extensions, interface-meta, pyhdfe, formulaic, linearmodels
     Successfully installed formulaic-1.1.1 interface-meta-1.3.0 linearmodels-6.1 mypy-extensions-1.1.0 pyhdfe-0.2.0 setuptools-scm-8.3.1
-
 
 
 ```python
@@ -158,7 +143,6 @@ print(data[['lowbrth', 'afdcprc', 'lphypc', 'lbedspc', 'lpcinc', 'lpopul', 'd90'
     alaska  1987      4.8  3.625954 -1.334238 -5.568345  9.823416  6.261492    0
             1990      4.8  4.363636 -1.326312 -5.616771  9.945924  6.309918    1
     arizona 1987      6.4  2.676471 -2.879257 -5.536276  9.569552  8.131531    0
-
 
 
 ```python
@@ -1119,7 +1103,6 @@ results_df.to_csv('panel_estimates.csv', index=False)
     3   First Differences  0.2249      0.1762        0.1683
     4  Random Effects GLS  0.1073      0.0167        0.0358
     5  Random Effects MLE  0.1073      0.0167        0.0358
-
 
 
 ```python
