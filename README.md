@@ -26,6 +26,8 @@ The write-up compares the estimators side by side and interprets their differenc
 analysis.md   # full analysis: code, estimation tables and interpretation
 ```
 
+Figures and tables are generated when the code is run; the figure files themselves are not stored in the repository.
+
 ## Reproducing
 
 ```bash
